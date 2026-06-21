@@ -53,8 +53,8 @@ description: "Use when debugging FastAPI 422 validation errors. Explains Pydanti
 ## Steps
 ### 1. 创建项目目录
 ```bash
-mkdir -p ~/myprojects/<project-name>/{src,tests,docs}
-cd ~/myprojects/<project-name>
+mkdir -p ~/myprojects/&lt;project-name&gt;/{src,tests,docs}
+cd ~/myprojects/&lt;project-name&gt;
 ```
 
 ### 2. 初始化 git
@@ -66,8 +66,8 @@ git commit -m "feat: initial project scaffold"
 
 ### 3. 安装依赖
 ```bash
-conda create -n <project-name> python=3.12 -y
-conda activate <project-name>
+conda create -n &lt;project-name&gt; python=3.12 -y
+conda activate &lt;project-name&gt;
 pip install -r requirements.txt
 ```
 ```
@@ -260,7 +260,7 @@ description: "Use when creating a new Python project. Use when initializing proj
 ## Steps
 1. 创建目录
 ```bash
-mkdir -p ~/myprojects/<name>
+mkdir -p ~/myprojects/&lt;name&gt;
 if [ $? -ne 0 ]; then
     echo "创建目录失败"
     exit 1

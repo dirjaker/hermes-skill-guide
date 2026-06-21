@@ -115,15 +115,15 @@ cp swagger-ui/dist/* docs/swagger/
 # 配置
 cat > docs/swagger/index.html << 'EOF'
 <!DOCTYPE html>
-<html>
-<head>
-    <title>API Documentation</title>
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;API Documentation</title>
     <link rel="stylesheet" type="text/css" href="swagger-ui.css">
 </head>
-<body>
+&lt;body&gt;
     <div id="swagger-ui"></div>
     <script src="swagger-ui-bundle.js"></script>
-    <script>
+    &lt;script&gt;
         SwaggerUIBundle({
             url: "/openapi.json",
             dom_id: '#swagger-ui',

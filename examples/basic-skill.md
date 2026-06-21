@@ -37,11 +37,11 @@ metadata:
 ### 1. Commit Message 格式
 
 ```
-<type>: <subject>
+&lt;type&gt;: &lt;subject&gt;
 
-<body>
+&lt;body&gt;
 
-<footer>
+&lt;footer&gt;
 ```
 
 ### 2. Type 类型

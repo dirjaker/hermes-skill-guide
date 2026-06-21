@@ -107,7 +107,7 @@ node_modules/
 
 ```bash
 # 基本构建
-docker build -t <image-name>:<tag> .
+docker build -t &lt;image-name&gt;:&lt;tag&gt; .
 
 # 示例
 docker build -t my-app:latest .

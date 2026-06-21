@@ -115,7 +115,7 @@ key2: value2
 **场景 1：<场景描述>**
 ```
 用户：<用户消息>
-Hermes：[加载 <skill-name> skill]
+Hermes：[加载 &lt;skill-name&gt; skill]
 Hermes：[按照 Steps 执行]
 结果：<执行结果>
 ```
@@ -123,7 +123,7 @@ Hermes：[按照 Steps 执行]
 **场景 2：<场景描述>**
 ```
 用户：<用户消息>
-Hermes：[加载 <skill-name> skill]
+Hermes：[加载 &lt;skill-name&gt; skill]
 Hermes：[按照 Steps 执行]
 结果：<执行结果>
 ```
@@ -188,8 +188,8 @@ tags: [git, commit, conventions]
 ### 1. 创建项目目录
 
 ```bash
-mkdir -p ~/myprojects/<project-name>/{src,tests,docs}
-cd ~/myprojects/<project-name>
+mkdir -p ~/myprojects/&lt;project-name&gt;/{src,tests,docs}
+cd ~/myprojects/&lt;project-name&gt;
 ```
 
 **参数说明：**
@@ -211,7 +211,7 @@ cd ~/myprojects/<project-name>
    - 原因：之前创建过同名环境
    - 解决：
      ```bash
-     conda env remove -n <project-name>
+     conda env remove -n &lt;project-name&gt;
      ```
    - 预防：创建前先检查 `conda env list`
 ```
@@ -272,8 +272,8 @@ metadata:
 ### 2. 创建目录结构
 
 ```bash
-mkdir -p ~/myprojects/<project-name>/{src,tests,docs}
-cd ~/myprojects/<project-name>
+mkdir -p ~/myprojects/&lt;project-name&gt;/{src,tests,docs}
+cd ~/myprojects/&lt;project-name&gt;
 ```
 
 ### 3. 生成基础文件
@@ -281,7 +281,7 @@ cd ~/myprojects/<project-name>
 **main.py:**
 ```python
 def main():
-    print("Hello from <project-name>!")
+    print("Hello from &lt;project-name&gt;!")
 
 if __name__ == "__main__":
     main()
@@ -297,8 +297,8 @@ rich>=13.0.0
 ### 4. 创建 Conda 环境
 
 ```bash
-conda create -n <project-name> python=3.12 -y
-conda activate <project-name>
+conda create -n &lt;project-name&gt; python=3.12 -y
+conda activate &lt;project-name&gt;
 pip install -r requirements.txt
 ```
 

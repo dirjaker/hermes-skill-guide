@@ -117,7 +117,7 @@ lsof -i:5173 | grep LISTEN
 lsof -ti:8000
 
 # 杀掉进程
-kill -9 <PID>
+kill -9 &lt;PID&gt;
 ```
 
 ### 2. 启动后端

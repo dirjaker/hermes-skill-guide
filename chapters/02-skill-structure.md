@@ -116,50 +116,20 @@ description: "This skill helps you create Python projects with proper structure 
 #### 各部分详解
 
 **## Overview**
-```markdown
-## Overview
 
-帮助用户快速创建一个新的 Python 项目，包含标准目录结构、
-conda 虚拟环境、git 初始化、基础依赖文件。
-```
+帮助用户快速创建一个新的 Python 项目，包含标准目录结构、conda 虚拟环境、git 初始化、基础依赖文件。
 
 - 简洁说明这个 skill 做什么
 - 不要超过 2-3 句话
 - 突出价值和适用场景
 
 **## When to Use**
-```markdown
-## When to Use
-
-- 用户说"创建一个新 Python 项目"
-- 用户说"新建项目"且上下文是 Python 相关
-
-**Don't use for:**
-- 已有项目的修改
-- 前端项目
-```
 
 - 明确触发条件（正向）
 - 明确不适用场景（反向）
 - 帮助 Hermes 准确匹配
 
 **## Steps**
-```markdown
-## Steps
-
-### 1. 确认项目信息
-
-向用户确认：
-- 项目名称
-- 项目类型
-- Python 版本
-
-### 2. 创建目录结构
-
-```bash
-mkdir -p ~/myprojects/<name>/{src,tests,docs}
-```
-```
 
 - 每个步骤一个子标题
 - 步骤要具体、可执行
@@ -167,16 +137,6 @@ mkdir -p ~/myprojects/<name>/{src,tests,docs}
 - 说明参数和选项
 
 **## Common Pitfalls**
-```markdown
-## Common Pitfalls
-
-1. **项目名包含大写字母**
-   → 修正：转为小写，空格替换为连字符
-
-2. **conda 环境已存在**
-   → 检查：`conda env list`
-   → 询问：是否删除重建
-```
 
 - 列出常见错误
 - 说明如何发现
@@ -184,13 +144,6 @@ mkdir -p ~/myprojects/<name>/{src,tests,docs}
 - 这是 skill 最有价值的部分
 
 **## Verification Checklist**
-```markdown
-## Verification Checklist
-
-- [ ] 目录结构正确：`ls -la ~/myprojects/<name>`
-- [ ] conda 环境创建成功：`conda env list | grep <name>`
-- [ ] 程序能运行：`python main.py`
-```
 
 - 每个检查点要可验证
 - 包含验证命令
@@ -232,13 +185,11 @@ metadata:
 
 ### 1. Commit Message 格式
 
-```
-<type>: <subject>
+    <type>: <subject>
 
-<body>
+    <body>
 
-<footer>
-```
+    <footer>
 
 ### 2. Type 类型
 
@@ -307,38 +258,34 @@ metadata:
 
 ### 1. 项目结构
 
-```
-backend/
-├── main.py
-├── app/
-│   ├── __init__.py
-│   ├── api/
-│   │   ├── __init__.py
-│   │   └── endpoints/
-│   ├── core/
-│   │   ├── config.py
-│   │   └── security.py
-│   ├── models/
-│   └── schemas/
-├── requirements.txt
-└── README.md
-```
+    backend/
+    ├── main.py
+    ├── app/
+    │   ├── __init__.py
+    │   ├── api/
+    │   │   ├── __init__.py
+    │   │   └── endpoints/
+    │   ├── core/
+    │   │   ├── config.py
+    │   │   └── security.py
+    │   ├── models/
+    │   └── schemas/
+    ├── requirements.txt
+    └── README.md
 
-详细结构参考 [references/project-structure.md](references/project-structure.md)
+详细结构参考 references/project-structure.md
 
 ### 2. 创建端点
 
-```python
-from fastapi import APIRouter
+    from fastapi import APIRouter
 
-router = APIRouter()
+    router = APIRouter()
 
-@router.get("/items/{item_id}")
-async def read_item(item_id: int):
-    return {"item_id": item_id}
-```
+    @router.get("/items/{item_id}")
+    async def read_item(item_id: int):
+        return {"item_id": item_id}
 
-更多模式参考 [references/api-patterns.md](references/api-patterns.md)
+更多模式参考 references/api-patterns.md
 
 ## Common Pitfalls
 
@@ -348,7 +295,7 @@ async def read_item(item_id: int):
 2. **数据库连接未关闭**
    → 使用依赖注入自动管理
 
-详细 pitfalls 参考 [references/common-pitfalls.md](references/common-pitfalls.md)
+详细 pitfalls 参考 references/common-pitfalls.md
 ```
 
 ---

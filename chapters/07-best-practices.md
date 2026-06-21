@@ -47,8 +47,8 @@ description: "Use when creating a new Python project. Sets up directory structur
 
 ### 1. 创建项目目录
 ```bash
-mkdir -p ~/myprojects/<project-name>/{src,tests,docs}
-cd ~/myprojects/<project-name>
+mkdir -p ~/myprojects/&lt;project-name&gt;/{src,tests,docs}
+cd ~/myprojects/&lt;project-name&gt;
 ```
 
 **参数说明：**
@@ -83,7 +83,7 @@ git commit -m "feat: initial project scaffold"
    - 原因：之前创建过同名环境
    - 解决：
      ```bash
-     conda env remove -n <project-name>
+     conda env remove -n &lt;project-name&gt;
      # 或换个名字
      ```
    - 预防：创建前先检查 `conda env list`
@@ -287,7 +287,7 @@ description: "Use when creating a new Python project from scratch."
 ## Steps
 ### 1. 创建项目目录
 ```bash
-mkdir -p ~/myprojects/<project-name>/{src,tests,docs}
+mkdir -p ~/myprojects/&lt;project-name&gt;/{src,tests,docs}
 ```
 
 ### 2. 初始化 git
